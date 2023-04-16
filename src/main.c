@@ -5,8 +5,17 @@
  */
 
 /** @file
- *  @brief Nordic UART Bridge Service (NUS) sample
+ *  @brief Based on Nordic UART Bridge Service (NUS) sample
  */
+
+/*
+ * Built a connection between nRF Connect App on mobile phone and nRF5340 Dev Kit.
+ * Connect nRF Terminal with VCOM1 port and use "115200 8n1 rtscts:off"
+ * After building and flashing with nRF Connect extension on VS Code, press RESET button on Dev Kit.
+ * Begin testing after seeing "Starting Nordic UART service example" in nRF Terminal.
+ * Write value with UART RX Characteristic, choose UTF8 and 'Request'. 
+ */
+
 #include "uart_async_adapter.h"
 
 #include <zephyr/types.h>
